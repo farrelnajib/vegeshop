@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vegeshop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--Start of navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow p-3" id="navbarContent">
+        <div class="container">
+            <a class="navbar-brand col-lg-1 col-1" href="index.html"
+                style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Vegeshop</a>
+            <div class="col-1"><button type="button" class="navbar-toggler" data-toggle="collapse"
+                    data-target="#content"><span class="navbar-toggler-icon"></span></button></div>
+
+            <form class="input-group col-lg-6 col-12">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </span>
+            </form>
+
+            <div id="content" class="collapse navbar-collapse col-lg-5">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="checkout.html" class="nav-link"><i class="fas fa-shopping-cart"></i>
+                            [4]</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" style="height: 40px; width: 40px;"><img
+                                src="images/user.jpg" class="user-image"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of navigation bar-->
+
+
+    <!--Start of hero section-->
+    <div class="img-container large" style="background-image: url('./images/bg_4.jpg');">
+        <div class="inner-container text-success">100% FRESH & ORGANIC FOODS</div>
+    </div>
+    <!--End of hero section-->
+
+    <div class="container categories">
+        <header class="section-heading">
+            <h3>Top categories</h3>
+        </header>
+
+        <div class="row">
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/category-1.jpg');">
+                        <!--For backend, put the pictures inside this style="background-image: url()"-->
+                    </a>
+
+                    <div class="card-body" align="center">
+                        <a href="#" class="text-categories">Vegetables</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/category-2.jpg');"></a>
+
+                    <div class="card-body" align="center">
+                        <a href="#" class="text-categories">Fruits</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/category-3.jpg');"></a>
+
+                    <div class="card-body" align="center">
+                        <a href="#" class="text-categories">Juices</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/category-4.jpg');"></a>
+
+                    <div class="card-body" align="center">
+                        <a href="#" class="text-categories">Drieds</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container products">
+        <header class="section-heading">
+            <h3>Best selling products</h3>
+        </header>
+
+        <div class="row">
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/product-1.jpg');">
+                        <!--For backend, put the pictures inside this style="background-image: url()"-->
+                    </a>
+
+                    <div class="card-body details">
+                        <div class="product-name text-truncate"><a href="#" class="product-name">Bell Peppers</a>
+                        </div>
+                        <div class="product-ratings">
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            56 reviews
+                        </div>
+                        <div class="product-price">Rp. 56.000/kg</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/product-2.jpg');">
+                    </a>
+
+                    <div class="card-body">
+                        <div class="product-name text-truncate"><a href="#" class="product-name">Strawberry</a>
+                        </div>
+                        <div class="product-ratings">
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            45 reviews
+                        </div>
+                        <div class="product-price">Rp. 25.000/kg</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/product-3.jpg');">
+                    </a>
+
+                    <div class="card-body">
+                        <div class="product-name text-truncate"><a href="#" class="product-name">Green Beans</a>
+                        </div>
+                        <div class="product-ratings">
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            49 reviews
+                        </div>
+                        <div class="product-price">Rp. 45.000/kg</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/product-4.jpg');">
+                    </a>
+
+                    <div class="card-body">
+                        <div class="product-name text-truncate"><a href="#" class="product-name">Cabbage</a>
+                        </div>
+                        <div class="product-ratings">
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            50 reviews
+                        </div>
+                        <div class="product-price">Rp. 86.000/kg</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/product-5.jpg');">
+                    </a>
+
+                    <div class="card-body">
+                        <div class="product-name text-truncate"><a href="#" class="product-name">Tomatoes</a>
+                        </div>
+                        <div class="product-ratings">
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            76 reviews
+                        </div>
+                        <div class="product-price">Rp. 65.000/kg</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/product-6.jpg');">
+                    </a>
+
+                    <div class="card-body">
+                        <div class="product-name text-truncate"><a href="#" class="product-name">Brocolli</a>
+                        </div>
+                        <div class="product-ratings">
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            89 reviews
+                        </div>
+                        <div class="product-price">Rp. 21.000/kg</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/product-7.jpg');">
+                    </a>
+
+                    <div class="card-body">
+                        <div class="product-name text-truncate"><a href="#" class="product-name">Carrot</a>
+                        </div>
+                        <div class="product-ratings">
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            <i class="fas fa-star" style="color:green"></i>
+                            2 reviews
+                        </div>
+                        <div class="product-price">Rp. 80.000/kg</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="card card-product-grid">
+                    <a href="#" class="img-wrap" style="background-image: url('./images/product-10.jpg');">
+                    </a>
+
+                    <div class="card-body">
+                        <div class="product-name text-truncate"><a href="#" class="product-name">Apples</a>
+                        </div>
+                        <div class="product-ratings">
+                            <i class="far fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            <i class="far fa-star" style="color:green"></i>
+                            No reviews
+                        </div>
+                        <div class="product-price">Rp. 68.000/kg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="section-footer">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col col-lg-3 col-md-3 col-sm- col-3 list-footer">
+                <strong>Categories</strong><br>
+                <a href="#" class="text-normal">Vegetables</a><br>
+                <a href="#" class="text-normal">Fruits</a><br>
+                <a href="#" class="text-normal">Juices</a><br>
+                <a href="#" class="text-normal">Drieds</a><br>
+            </div>
+            <div class="col col-lg-3 col-md-3 col-sm- col-3 list-footer">
+                <strong>Menu</strong><br>
+                <a href="#" class="text-normal">Shop</a><br>
+                <a href="#" class="text-normal">About</a><br>
+                <a href="#" class="text-normal">Contact us</a><br>
+            </div>
+            <div class="col col-lg-3 col-md-3 col-sm- col-3 list-footer">
+                <strong>Help</strong><br>
+                <a href="#" class="text-normal">Shipping informations</a><br>
+                <a href="#" class="text-normal">FAQs</a><br>
+                <a href="#" class="text-normal">Terms & conditions</a><br>
+                <a href="#" class="text-normal">Privacy policy</a><br>
+            </div>
+            <div class="col col-lg-3 col-md-3 col-sm- col-3 list-footer">
+                <strong>Social</strong><br>
+                <a href="#" class="text-normal"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                <a href="#" class="text-normal"><i class="fab fa-twitter"></i> Twitter</a><br>
+                <a href="#" class="text-normal"><i class="fab fa-instagram"></i> Instagram</a><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" align="center">
+                <small>Copyright &copy;2020 Vegeshop. All rights reserved</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

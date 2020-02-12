@@ -1,0 +1,198 @@
+.section-heading {
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-container {
+    display: grid;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.large {
+    height: 720px;
+}
+
+.medium {
+    height: 480px;
+}
+
+
+.inner-container {
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-weight: bolder;
+
+}
+
+.user-image {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.card-product-grid {
+    margin-bottom: 20px;
+}
+
+.card-head {
+    max-height: 220px;
+    vertical-align: middle;
+}
+
+.card-product-grid:hover {
+    box-shadow: 0px 0px 20px #e0e0e0;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-product-grid::after {
+    transition: all 0.2s ease-out;
+}
+
+.card-product-grid .img-wrap {
+    border-radius: 0.2rem 0.2rem 0 0;
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+}
+
+.categories {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.text-categories {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.text-categories:hover {
+    color: green;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.products {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.section-footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #ECF3E3;
+    color: black;
+}
+
+[class*='card-product'] .img-wrap img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+    display: inline-block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.product-name {
+    text-decoration: none;
+    max-width: 100%;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-name:hover {
+    text-decoration: none;
+    color: green;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 20px;
+    color: #FA591D;
+}
+
+.text-normal {
+    color: black;
+    font-size: 14px;
+}
+
+.text-normal:hover {
+    color: green;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.list-footer {
+    margin-bottom: 20px;
+}
+
+.accordion .choice:hover {
+    cursor: pointer;
+}
+
+.btn-search {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: rgb(139, 139, 139);
+    background-color: #cfcfcf;
+    border-color: #cfcfcf
+}
+
+.btn-search:hover {
+    color: rgb(139, 139, 139);
+    background-color: #c2c2c2;
+    border-color: #c2c2c2
+}
+
+.img-sm {
+    width: 90px;
+    max-height: 60px;
+    object-fit: cover;
+}
+
+.media img {
+    margin-right: 1rem;
+}
+
+.media-body .product-review {
+    font-size: 14px;
+}
+
+.mid {
+    vertical-align: middle;
+}
+
+.payment {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

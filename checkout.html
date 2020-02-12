@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vegeshop - Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="font-awesome/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--Start of navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow p-3" id="navbarContent">
+        <div class="container">
+            <a class="navbar-brand col-lg-1 col-1" href="index.html"
+                style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Vegeshop</a>
+            <div class="col-1"><button type="button" class="navbar-toggler" data-toggle="collapse"
+                    data-target="#content"><span class="navbar-toggler-icon"></span></button></div>
+
+            <form class="input-group col-lg-6 col-12">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </span>
+            </form>
+
+            <div id="content" class="collapse navbar-collapse col-lg-5">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item active"><a href="checkout.html" class="nav-link"><i
+                                class="fas fa-shopping-cart"></i> [4]</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" style="height: 40px; width: 40px;"><img
+                                src="images/user.jpg" class="user-image"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of navigation bar-->
+
+
+    <!--Start of hero section-->
+    <div class="img-container medium" style="background-image: url('./images/bg_4.jpg');">
+        <div class="inner-container text-success">CHECKOUT</div>
+    </div>
+    <!--End of hero section-->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-8 col-md-12 col-12 mb-5">
+                <div class="accordion">
+                    <div class="card">
+                        <div class="card-header choice" data-toggle="collapse" data-target="#cart" aria-expanded="true"
+                            aria-controls="cart">
+                            <strong>Cart details</strong>
+                        </div>
+
+                        <div id="cart" class="collapse show">
+                            <div class="card-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="vertical-align: middle;">
+                                                <figure class="media mb-0">
+                                                    <div class="img-wrap"><img src="images/product-2.jpg"
+                                                            class="img-thumbnail img-sm" /></div>
+                                                    <figcaption class="media-body">
+                                                        <h5 class="title text-truncate">Strawberry</h5>
+                                                        <p class="product-review">
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="far fa-star" style="color:green"></i>
+                                                            45 reviews</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </td>
+                                            <td style="vertical-align: middle;">1</td>
+                                            <td style="vertical-align: middle;">
+                                                <var class="product-price">Rp. 25.000</var><br />
+                                                <small class="text-muted">(Rp. 25.000 each)</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="vertical-align: middle;">
+                                                <figure class="media mb-0">
+                                                    <div class="img-wrap"><img src="images/product-3.jpg"
+                                                            class="img-thumbnail img-sm" /></div>
+                                                    <figcaption class="media-body">
+                                                        <h5 class="title text-truncate">Green beans</h5>
+                                                        <p class="product-review">
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            49 reviews</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </td>
+                                            <td style="vertical-align: middle;">1</td>
+                                            <td style="vertical-align: middle;">
+                                                <var class="product-price">Rp. 45.000</var><br />
+                                                <small class="text-muted">(Rp. 45.000 each)</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="vertical-align: middle;">
+                                                <figure class="media mb-0">
+                                                    <div class="img-wrap"><img src="images/product-10.jpg"
+                                                            class="img-thumbnail img-sm" /></div>
+                                                    <figcaption class="media-body">
+                                                        <h5 class="title text-truncate">Apples</h5>
+                                                        <p class="product-review">
+                                                            <i class="far fa-star" style="color:green"></i>
+                                                            <i class="far fa-star" style="color:green"></i>
+                                                            <i class="far fa-star" style="color:green"></i>
+                                                            <i class="far fa-star" style="color:green"></i>
+                                                            <i class="far fa-star" style="color:green"></i>
+                                                            No reviews</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </td>
+                                            <td style="vertical-align: middle;">1</td>
+                                            <td style="vertical-align: middle;">
+                                                <var class="product-price">Rp. 68.000</var><br />
+                                                <small class="text-muted">(Rp. 68.000 each)</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="vertical-align: middle;">
+                                                <figure class="media mb-0">
+                                                    <div class="img-wrap"><img src="images/product-6.jpg"
+                                                            class="img-thumbnail img-sm" /></div>
+                                                    <figcaption class="media-body">
+                                                        <h5 class="title text-truncate">Brocolli</h5>
+                                                        <p class="product-review">
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="fas fa-star" style="color:green"></i>
+                                                            <i class="far fa-star" style="color:green"></i>
+                                                            <i class="far fa-star" style="color:green"></i>
+                                                            89 reviews</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </td>
+                                            <td style="vertical-align: middle;">2</td>
+                                            <td style="vertical-align: middle;">
+                                                <var class="product-price">Rp. 42.000</var><br />
+                                                <small class="text-muted">(Rp. 21.000 each)</small>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header choice" data-toggle="collapse" data-target="#shippingInfo"
+                            aria-expanded="true" aria-controls="shippingInfo">
+                            <strong>Shipping information</strong>
+                        </div>
+
+                        <div id="shippingInfo" class="collapse show">
+                            <div class="card-body">
+                                <form action="#" method="POST">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="customer-name">Name<span class="mandatory">*</span></label>
+                                                <input class="form-control" type="text" name="customer-name"
+                                                    placeholder="Insert your name..." />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="customer-address">Address<span
+                                                        class="mandatory">*</span></label>
+                                                <input class="form-control" type="text" name="customer-address"
+                                                    placeholder="Insert your address..." />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="customer-district">District (kecamatan)<span
+                                                        class="mandatory">*</span></label>
+                                                <input class="form-control" type="text" name="customer-district"
+                                                    placeholder="Insert your district..." />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="customer-city">City<span class="mandatory">*</span></label>
+                                                <input class="form-control" type="text" name="customer-city"
+                                                    placeholder="Insert your city..." />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label for="customer-province">Province<span
+                                                        class="mandatory">*</span></label>
+                                                <select class="form-control select-with-select2"
+                                                    name="customer-province" id="customer-province">
+                                                    <option value="0">Choose province...</option>
+                                                    <option value="1">Jawa Barat</option>
+                                                    <option value="2">Jawa Tengah</option>
+                                                    <option value="3">Jawa Timur</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label for="customer-postal-code">Postal Code<span
+                                                        class="mandatory">*</span></label>
+                                                <input class="form-control" type="number" name="customer-postal-code"
+                                                    placeholder="Insert postal code..." />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label for="customer-email">Email<span
+                                                        class="mandatory">*</span></label>
+                                                <input class="form-control" type="number" name="customer-email"
+                                                    placeholder="Insert your email..." />
+                                            </div>
+                                        </div>
+                                        <div class="col col-lg-6 col-12">
+                                            <div class="form-group">
+                                                <label for="customer-number">Phone number<span
+                                                        class="mandatory">*</span></label>
+                                                <input class="form-control" type="number" name="customer-number"
+                                                    placeholder="Insert your phone number..." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <small>* required fields</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-12 col-12">
+                <div class="row mt-0">
+                    <div class="col col-lg-12 col-12 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Cart total</strong>
+                            </div>
+
+                            <div class="card-body">
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <td>Subtotal</td>
+                                        <td align="right"><strong>Rp. 180.000</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delivery fee</td>
+                                        <td align="right"><strong>Rp. 11.000</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discount</td>
+                                        <td align="right"><strong>- Rp. 0</strong></td>
+                                    </tr>
+                                </table>
+                                <table class="table">
+                                    <tr>
+                                        <td style="vertical-align: middle;">Total</td>
+                                        <td align="right" class="product-price"><strong>Rp. 191.000</strong></td>
+                                    </tr>
+                                </table>
+
+                                <form action="#" method="POST">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" name="promo-code"
+                                                placeholder="Promo code" />
+                                            <span class="input-group-append">
+                                                <button class="btn btn-success">Apply</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col col-lg-12 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Select payment method</strong>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="paypalRadio" name="payment" class="custom-control-input">
+                                    <label class="custom-control-label" for="paypalRadio">
+                                        <figure class="media">
+                                            <div class="img-wrap"><img src="images/paypal-logo.png"
+                                                    class="img-thumbnail img-sm" /></div>
+                                            <figcaption class="media-body">
+                                                <h5 class="title text-truncate payment">Paypal</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="ccRadio" name="payment" class="custom-control-input">
+                                    <label class="custom-control-label" for="ccRadio">
+                                        <figure class="media">
+                                            <div class="img-wrap"><img src="images/cc-logo.png"
+                                                    class="img-thumbnail img-sm" /></div>
+                                            <figcaption class="media-body">
+                                                <h5 class="title text-truncate payment">Credit card</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="bankRadio" name="payment" class="custom-control-input">
+                                    <label class="custom-control-label" for="bankRadio">
+                                        <figure class="media">
+                                            <div class="img-wrap"><img src="images/bank-transfer.svg"
+                                                    class="img-thumbnail img-sm" /></div>
+                                            <figcaption class="media-body">
+                                                <h5 class="title text-truncate payment">Bank transfer</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="gopayRadio" name="payment" class="custom-control-input">
+                                    <label class="custom-control-label" for="gopayRadio">
+                                        <figure class="media">
+                                            <div class="img-wrap"><img src="images/gopay-logo.png"
+                                                    class="img-thumbnail img-sm" /></div>
+                                            <figcaption class="media-body">
+                                                <h5 class="title text-truncate payment">Gopay</h5>
+                                            </figcaption>
+                                        </figure>
+                                    </label>
+                                </div>
+                                <a href="#" class="btn btn-success btn-lg btn-block">Confirm payment method</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="section-footer">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col col-lg-3 col-md-3 col-sm-6 col-6 list-footer">
+                <strong>Categories</strong><br>
+                <a href="#" class="text-normal">Vegetables</a><br>
+                <a href="#" class="text-normal">Fruits</a><br>
+                <a href="#" class="text-normal">Juices</a><br>
+                <a href="#" class="text-normal">Drieds</a><br>
+            </div>
+            <div class="col col-lg-3 col-md-3 col-sm-6 col-6 list-footer">
+                <strong>Menu</strong><br>
+                <a href="#" class="text-normal">Shop</a><br>
+                <a href="#" class="text-normal">About</a><br>
+                <a href="#" class="text-normal">Contact us</a><br>
+            </div>
+            <div class="col col-lg-3 col-md-3 col-sm-6 col-6 list-footer">
+                <strong>Help</strong><br>
+                <a href="#" class="text-normal">Shipping informations</a><br>
+                <a href="#" class="text-normal">FAQs</a><br>
+                <a href="#" class="text-normal">Terms & conditions</a><br>
+                <a href="#" class="text-normal">Privacy policy</a><br>
+            </div>
+            <div class="col col-lg-3 col-md-3 col-sm-6 col-6 list-footer">
+                <strong>Social</strong><br>
+                <a href="#" class="text-normal"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                <a href="#" class="text-normal"><i class="fab fa-twitter"></i> Twitter</a><br>
+                <a href="#" class="text-normal"><i class="fab fa-instagram"></i> Instagram</a><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" align="center">
+                <small>Copyright &copy;2020 Vegeshop. All rights reserved</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
